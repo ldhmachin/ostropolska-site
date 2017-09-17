@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: lighter;
+  font-size: 6vw;
+  letter-spacing: 1vw;
+  padding-left: 1vw;
+  line-height: 5vh;
+  color: white;
+  transform: scaleY(1.7);
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: lighter;
+  font-size: 4.5vw;
+  line-height: 0;
+  color: white;
+  transform: scaleY(0.8);
+}
+
+#title-wrapper {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 1fr;
+}
+
+#ring {
+  height: 10vw;
+  width: auto;
+  filter: invert();
+}
+
+#back-img {
+  position: fixed;
+  width: 100vw;
+  height: auto;
+  filter: invert();
+}
+
+#site-wrapper {
+  position: absolute;
+  display: grid;
+  width: 100vw;
+}
+
+#header {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: 85vh 15vh;
+  background-color: #875C74;/*#EDE3E9;*/
+  justify-content: center;
+}
+
+#name {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #875C74;/*#EDE3E9;*/
+  justify-content: center;
+  align-items: center;
+}
+
+#window {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+#content {
+  display: flex;
+  width: 100vw;
+  height: 200vh;
+  background-color: white;
+}
+
+#btn {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-downs {
+  position: absolute;
+  margin: auto;
+
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+@media screen and (max-width: 800px) {
+
+  h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: lighter;
+    font-size: 9vw;
+    letter-spacing: 1.5vw;
+    padding-left: 1.5vw;
+    line-height: 5vh;
+    color: white;
+    transform: scaleY(1.7);
+  }
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: lighter;
+    font-size: 6.75vw;
+    line-height: 0;
+    color: white;
+    transform: scaleY(0.8);
+  }
+
+}
